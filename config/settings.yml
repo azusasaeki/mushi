@@ -1,0 +1,10 @@
+production: &production
+  line:
+    key: hogehoge1234
+    secret: hogesecret1234
+development: &development
+  line:
+    key: hogehoge1234
+    secret: hogesecret1234
+test:
+  <<: *development
