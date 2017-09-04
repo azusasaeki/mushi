@@ -28,6 +28,10 @@ gem 'jbuilder', '~> 2.5'
 gem 'omniauth-line'
 
 gem 'devise'
+gem 'dotenv-rails' # read .env file
+gem 'beautiful-log'
+gem "better_errors"
+gem "binding_of_caller"
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -41,6 +45,12 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
+  gem 'pry-rails'  # rails console(もしくは、rails c)でirbの代わりにpryを使われる
+  gem 'pry-doc'    # methodを表示
+  gem 'pry-byebug' # デバッグを実施(Ruby 2.0以降で動作する)
+  gem 'pry-stack_explorer' # スタックをたどれる
+
+
   gem 'selenium-webdriver'
 end
 

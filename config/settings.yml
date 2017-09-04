@@ -1,0 +1,4 @@
+development: &development
+  line:
+    key: <%= ENV['LINE_CHANNEL_ID'] %>
+    secret: <%= ENV['LINE_CHANNEL_SECRET'] %>
